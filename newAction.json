@@ -1,0 +1,186 @@
+[
+    {
+        "_id": "647f0e5737a7c9d4699202d4",
+        "applicationId": "syntheticui",
+        "organizationId": "Org",
+        "pluginType": "API",
+        "pluginId": "API",
+        "Action": {
+            "name": "createVideo",
+            "datasource": {
+                "name": "DEFAULT_REST_DATASOURCE",
+                "datasourceConfiguration": {
+                    "url": "{{main.env.nr}}/createVideo"
+                },
+                "invalids": [],
+                "isValid": true,
+                "pluginId": "API",
+                "messages": []
+            },
+            "executeOnLoad": false,
+            "pageId": "home",
+            "actionConfiguration": {
+                "timeoutInMillisecond": 10000,
+                "encodeParamsToggle": true,
+                "httpMethod": "GET",
+                "headers": [],
+                "queryParameters": [
+                    {
+                        "key": "text",
+                        "value": "{{Input1.text}}"
+                    },
+                    {
+                        "key": "avatar",
+                        "value": "{{Select1.selectedOptionValue}}"
+                    },
+                    {
+                        "key": "voice",
+                        "value": "{{Select2.selectedOptionValue}}"
+                    },
+                    {
+                        "key": "lan",
+                        "value": "{{Select3.selectedOptionValue}}"
+                    }
+                ],
+                "bodyFormData": [],
+                "formData": {
+                    "apiContentType": "none"
+                },
+                "pluginSpecifiedTemplates": [
+                    {
+                        "value": true
+                    }
+                ],
+                "path": ""
+            },
+            "dynamicBindingPathList": [
+                {
+                    "key": "datasourceUrl"
+                },
+                {
+                    "key": "queryParameters[0].value"
+                },
+                {
+                    "key": "queryParameters[1].value"
+                },
+                {
+                    "key": "queryParameters[2].value"
+                },
+                {
+                    "key": "queryParameters[3].value"
+                }
+            ],
+            "isValid": true,
+            "invalids": [],
+            "jsonPathKeys": [
+                "main.env.nr",
+                "Input1.text",
+                "Select1.selectedOptionValue",
+                "Select2.selectedOptionValue",
+                "Select3.selectedOptionValue"
+            ],
+            "userSetOnLoad": false,
+            "confirmBeforeExecute": false
+        },
+        "createdAt": "2023-06-06T10:45:43.547Z",
+        "updatedAt": "2023-06-07T08:12:27.144Z",
+        "deleted": false,
+        "policies": [
+            {
+                "permission": "read:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "manage:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "execute:actions",
+                "groups": [],
+                "users": []
+            }
+        ]
+    },
+    {
+        "_id": "647f0fa237a7c9d4699202d5",
+        "applicationId": "syntheticui",
+        "organizationId": "Org",
+        "pluginType": "API",
+        "pluginId": "API",
+        "Action": {
+            "name": "checkVideo",
+            "datasource": {
+                "name": "DEFAULT_REST_DATASOURCE",
+                "datasourceConfiguration": {
+                    "url": "{{main.env.nr}}/checkVideo"
+                },
+                "invalids": [],
+                "isValid": true,
+                "pluginId": "API",
+                "messages": []
+            },
+            "executeOnLoad": false,
+            "pageId": "home",
+            "actionConfiguration": {
+                "timeoutInMillisecond": 10000,
+                "encodeParamsToggle": true,
+                "httpMethod": "GET",
+                "headers": [],
+                "queryParameters": [
+                    {
+                        "key": "id",
+                        "value": "{{createVideo.data.id}}"
+                    }
+                ],
+                "bodyFormData": [],
+                "formData": {
+                    "apiContentType": "none"
+                },
+                "pluginSpecifiedTemplates": [
+                    {
+                        "value": true
+                    }
+                ],
+                "path": ""
+            },
+            "dynamicBindingPathList": [
+                {
+                    "key": "datasourceUrl"
+                },
+                {
+                    "key": "queryParameters[0].value"
+                }
+            ],
+            "isValid": true,
+            "invalids": [],
+            "jsonPathKeys": [
+                "main.env.nr",
+                "createVideo.data.id"
+            ],
+            "userSetOnLoad": false,
+            "confirmBeforeExecute": false
+        },
+        "createdAt": "2023-06-06T10:51:14.054Z",
+        "updatedAt": "2023-06-07T08:12:22.751Z",
+        "deleted": false,
+        "policies": [
+            {
+                "permission": "read:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "manage:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "execute:actions",
+                "groups": [],
+                "users": []
+            }
+        ]
+    }
+]

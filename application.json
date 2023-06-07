@@ -1,0 +1,47 @@
+{
+    "_id": "647f00d537a7c9d4699202ce",
+    "name": "syntheticui",
+    "slug": "syntheticui",
+    "organizationId": "Org",
+    "isPublic": false,
+    "isMenu": false,
+    "createdAt": "2023-06-06T09:48:05.340Z",
+    "updatedAt": "2023-06-06T09:48:05.340Z",
+    "deleted": false,
+    "pages": [
+        {
+            "_id": "home",
+            "isDefault": true
+        }
+    ],
+    "policies": [
+        {
+            "permission": "makePublic:applications",
+            "groups": [],
+            "users": []
+        },
+        {
+            "permission": "read:applications",
+            "groups": [],
+            "users": []
+        },
+        {
+            "permission": "publish:applications",
+            "groups": [],
+            "users": []
+        },
+        {
+            "permission": "manage:applications",
+            "groups": [],
+            "users": []
+        }
+    ],
+    "gitApplicationMetadata": {
+        "browserSupportedRemoteUrl": "https://github.com/UBOS-tech/text-to-video-ElevenlabsUI",
+        "defaultApplicationId": "syntheticui",
+        "defaultBranchName": "main",
+        "isRepoPrivate": true,
+        "remoteUrl": "git@github.com:UBOS-tech/text-to-video-ElevenlabsUI.git",
+        "repoName": "text-to-video-ElevenlabsUI"
+    }
+}
